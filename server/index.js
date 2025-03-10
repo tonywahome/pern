@@ -10,7 +10,7 @@ app.use(express.json());
 //ROUTES//
 
 //create a todo
-app.post("/todos", async (req, res) => {
+app.post("/todos ", async (req, res) => {
     try {
         console.log(req.body);
         const { description } = req.body;
@@ -22,7 +22,7 @@ app.post("/todos", async (req, res) => {
     } catch (err) {
         console.error(err.message);
     }
-}
+});
 
 //get all todos
 
@@ -30,7 +30,11 @@ app.post("/todos", async (req, res) => {
 
 //update a todo
 
+// delete a todo
+
+
 app.listen(5000, () => {
-    console.log('server is listening on port 5000');
+    console.log("server is listening on port 5000");
 });
+// The server is set up to listen on port 5000. When the server is started, it will log a message to the console indicating that it is listening on port 5000. The server will remain running until it is stopped manually. 
 
