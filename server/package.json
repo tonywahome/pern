@@ -20,5 +20,6 @@
     "pern"
   ],
   "author": "Antony Wahome",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }
